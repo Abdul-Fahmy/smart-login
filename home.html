@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <!-- Bootstrap File -->
+    <link rel="stylesheet" href="./styles/bootstrap.min.css" />
+    <!-- CSS File -->
+    <link rel="stylesheet" href="./styles/home.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      if (localStorage.getItem("userSign") !== null) {
+        window.location.href = "home.html";
+      } else {
+        alert("you should signin first ");
+        window.location.href = "index.html";
+      }
+    </script>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <a class="navbar-brand text-uppercase">smart login</a>
+
+        <button class="logout-btn btn btn-outline-warning" type="button">
+          logout
+        </button>
+      </div>
+    </nav>
+    <div class="container text-center h-100 my-5 d-flex align-items-center">
+      <div class="user-info w-75 mx-auto p-5">
+        <h1 id="username"></h1>
+      </div>
+    </div>
+    <!-- Bootstrap Js File -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- Main JS File -->
+    <script src="./js/index.js"></script>
+  </body>
+</html>

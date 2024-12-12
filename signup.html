@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Login</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap file -->
+    <link rel="stylesheet" href="./styles/bootstrap.min.css" />
+    <!-- main Css File -->
+    <link rel="stylesheet" href="./styles/signup.css" />
+  </head>
+  <body>
+    <div class="login">
+      <div class="container text-center mt-5">
+        <div class="signup-form w-75 m-auto p-5">
+          <h1>Smart Login System</h1>
+          <div class="my-3">
+            <input
+              id="signUpName"
+              type="text"
+              autocomplete="off"
+              class="form-control"
+              placeholder="Enter Your name"
+            />
+            <p class="text-start text-danger d-none mt-2">
+              Name must contain at least 3 character & first character must be
+              capital
+            </p>
+          </div>
+          <div class="my-3">
+            <input
+              id="signUpEmail"
+              type="text"
+              autocomplete="off"
+              class="form-control"
+              placeholder="Enter Your email"
+            />
+            <p class="text-start text-danger d-none mt-2">Invalid Email</p>
+          </div>
+          <div class="my-3">
+            <input
+              id="signUpPassword"
+              autocomplete="off"
+              type="password"
+              class="form-control"
+              placeholder="Enter Your password"
+            />
+            <p class="text-start text-danger d-none mt-2">
+              Password must contain at least 8 character
+            </p>
+          </div>
+          <p id="info"></p>
+          <button
+            type="button"
+            class="signup-btn btn btn-outline-info w-100 my-3 p-2"
+          >
+            Signup
+          </button>
+
+          <p class="text-white">
+            Don’t have an account? <a href="index.html">Signin</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- bootsrap js file -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- main JS File -->
+    <script src="./js/index.js"></script>
+  </body>
+</html>
